@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpino</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header and Navigation */
+        header {
+            padding: 20px 40px;
+            background: #f9f7f3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .contact-btn {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            background: linear-gradient(to bottom right, #d4f7a5 50%, #bff4ab 50%);
+            border-radius: 0 0 100px 0;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .sub-heading {
+            color: #b6a676;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .description {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 15px;
+            width: 300px;
+            border: none;
+            border-radius: 50px 0 0 50px;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        .search-bar button {
+            padding: 15px 30px;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            border-radius: 0 50px 50px 0;
+            cursor: pointer;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #f9f7f3;
+            padding: 40px;
+            text-align: center;
+            border-radius: 100px 0 0 100px;
+        }
+
+        .services-content h2 {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .service-logos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .service-logos img {
+            max-width: 100px;
+            margin: 0 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-logos img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">ALPINO</div>
+            <ul class="nav-links">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <button class="contact-btn">Contact Us</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <p class="sub-heading">Food with Recipes</p>
+            <h1>Good Taste. <br> Good Sense.</h1>
+            <p class="description">Our food service professionals are culinary wizards. They assemble dishes, handle processes, and cook up large quantities of mouthwatering delights.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search 5m+ recipes & foods">
+                <button>Search</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="food-bowl.png" alt="Food Bowls">
+        </div>
+    </section>
+
+    <!-- Online Services Section -->
+    <section class="services">
+        <div class="services-content">
+            <h2>Our Online Services</h2>
+            <div class="service-logos">
+                <img src="zomato-logo.png" alt="Zomato">
+                <img src="swiggy-logo.png" alt="Swiggy">
+                <img src="speedy-food-logo.png" alt="Speedy Food">
+                <img src="food-delivery-logo.png" alt="Food Delivery">
+                <img src="chef-food-logo.png" alt="Chef Food">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
